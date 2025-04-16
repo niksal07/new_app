@@ -21,6 +21,7 @@ jobs:
         python -m install pip --upgrade pip
         pip install flask pytest
     - name: Run Test
+      run: |
         pytest test_app.py
   deploy:
     needs: test
