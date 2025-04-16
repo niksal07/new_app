@@ -24,7 +24,7 @@ jobs:
         pytest test_app.py
   deploy:
     needs: test
-    runs on: ubuntu latest
+    runs on: ubuntu-latest
 
     - name: Simulate deployment
       run: |
